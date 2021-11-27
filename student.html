@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .nav1
+        {
+            background-color: lightgreen;
+        }
+        .modal-content
+        {
+          background-color:lightblue;
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
+<div class="m-4">
+    <nav class="navbar navbar-expand-lg navbar-light nav1">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">
+                <img src="stuent logo.jpg" height="28" alt="student logo">
+            </a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="nav navbar-nav navbar-right">
+                    <a href="#" class="nav-item nav-link active">VIEW PROFILE</a>
+                    <a href="#" class="nav-item nav-link">VIEW COLLEGE</a>
+                    <a href="#" class="nav-item nav-link">FEEDBACK</a>
+                    <a href="#" class="nav-item nav-link">LOGOUT</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="modal-dialog">
+      <div class="modal-content">
+    <div class="container mt-2">
+        <h2 class="ml-auto"><u>View Profile</u></h2>
+        <form >
+          <div class="mb-3 mt-3">
+            <label for="id">Student Id:</label>
+            <input type="text" class="form-control" id="id" placeholder="Enter id" name="id"required>
+          </div>
+          <div class="mb-3">
+            <label for="Name">Student Name:</label><br>
+            <input type="text" class="form-control" id="Name" placeholder="Enter your name " name="Name" required>
+          </div>
+          <div class="mb-3">
+            <label for="Name">Email id:</label><br>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email id :eg:a@gmail.com" name="email"required>
+          </div>
+          <div class="mb-3">
+            <label for="Name">Mobile number:</label><br>
+            <input type="telNo" class="form-control" id="number" placeholder="Enter your Mobile number" maxlength="10" name="Mobile number"required>
+          </div>
+          <div class="mb-3">
+            <label for="Address">Address:</label><br>
+            <input type="text" class="form-control" id="Address" placeholder="Enter your Address" name="Address"required>
+          </div>
+
+          <div class="mb-3">
+            <label for="exam">Exam:</label><br>
+            <input list="exam" name="exam" id="exam"class="form-control">
+            <datalist id="exam" >
+              <option value="APEAMCET">
+              <option value="TSEAMCET">
+              <option value="JEE MAINS">
+              <option value="VIT">
+            </datalist>
+          </div>
+
+          <div class="mb-3">
+            <label for="Department">Department:</label><br>
+            <input list="Department" name="Dept" id="Dept"class="form-control">
+            <datalist id="Department" >
+              <option value="Computer Science Enineering">
+              <option value="Information Technoloy">
+              <option value="Computer Science and Systems Enineering">
+              <option value="Electrical and Electronics Enineering">
+              <option value="Electronics and Communications Engineering ">
+              <option value="Civil Engineering">
+              <option value="Mechanical Engineering">
+            </datalist>
+          </div>
+          <div class="mb-3">
+            <label for="Marks">Marks:</label><br>
+            <input type="number" class="form-control" id="number" placeholder="Enter your Marks" name="Marks"required">
+          </div>
+        </form>
+      </div>
+    </div>
+    </div>
+      
+</div>
+</body>
+</html>
