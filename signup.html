@@ -6,26 +6,108 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Sign Up</title>
+        <style>
+     
+            body{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                height: 100vh;
+                background-size: cover;
+                background:transparent;
+
+            }
+            form{
+                margin-top: 50px;
+                text-align: center;
+            }
+            input{
+                display: block;
+                width: 355px;
+                height: 40px;
+                margin: 20px;
+                border: none;
+                outline: none;
+                font-size: 20px;
+                border-bottom: 1px solid black;
+
+            }
+            button{
+    
+                width: 364px;
+                height: 40px;
+                font-size: 20px;
+                background-color: blue;
+                border: none;
+                color: white;
+                margin-top:10px;
+            }
+            h1{
+                margin-bottom: 50px;
+                align-items: center;
+                font-size:xx-large
+
+            }
+            ::placeholder{
+                color:black;
+            }
+            form button:hover , form button:active{
+                background:bisque;
+            }
+            
+           
+        </style>
     </head>
 <body>
-    <div class="container">
-
-        <section class=" text-center p-5 text-justify-center">
-        <h1>Sign Up</h1>
-        <input type="text" name="" placeholder="First Name">
-        <input type="text" name="" placeholder="Last Name">
-        <input type="email" name="" placeholder="Enter mail-Id">
-        <input type="password" name="" placeholder="Enter Password">
-        <input type="Conform password" name="" placeholder="Enter Conform Password">
-
+    <div id="error" class="container">
+        <div clas="form">
+        <form class="modal-content">
+    
+            <section class=" text-center p-5 text-justify-center">
             
-            <!-- write form here -->
-        </section>
-
-
-
-        <!--  -->
-
+            <h1>Registration Form</h1>
+            <p>Please fill in this form to create an account.</p>
+            <input type="text" name="fname" list="fname" placeholder="First Name"><br>
+            <datalist id="fname">
+                <option>Muneendra</option>
+                <option>Somu</option>
+                <option>Ganesh</option>
+                <option>Dhana</option>
+            </datalist>
+            <br>
+    
+            <input type="text" name="lname"  list="lname"placeholder="Last Name"><br>
+            <datalist id="lname">
+                <option>Thallapaka</option>
+                <option>Ravvala</option>
+                <option>var</option>
+                <option>samanu</option>
+            </datalist>
+            <br>
+            
+            <input type="email" name="email" list="mymails" placeholder="Enter mail-Id"><br>
+            <datalist id="mymails">
+                <option>Thalla1@gamil.com</option>
+                <option>somu2@gami</option>
+                <option>Ganesh3@gmai.com</option>
+                <option>Dhana4@gamil.com</option>
+            </datalist>
+            <br>
+            <input type="password" name="pwd" placeholder="Enter Password"><br>
+            <input type="password" name="cn-pwd" placeholder="Enter Conform Password">
+             
+            <button  type="submit"><a href="">Sign Up</a></button>
+            <p class="message" >Already Registered?<a href="#" >Login</a></p>
+                
+            <p>By creating an account you need to agree  our <a href="#" style="color:dodgerblue">Terms & Privacy</a></p>
+            
+                <!-- write form here -->
+            
+            </section>
+        </form>
+         
+        </div>          <!--  -->
     </div>
+     
 </body>
 </html>
