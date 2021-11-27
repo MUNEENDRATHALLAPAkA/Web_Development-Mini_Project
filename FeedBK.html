@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="description" content="front end,back end,college prediction,mini project">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign Up</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                font-family: sans-serif;
+                box-sizing: border-box;
+                outline: none;
+                color: #fff;
+            }
+            section{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background-size: cover;
+                filter: brightness( 50%); 
+
+            }
+            body{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                max-height: 100vh;
+            } 
+            .container{
+                margin: 10% 6%;
+                padding-bottom: 5%;
+                width: 450px;
+                background: #000;
+                box-shadow: 0px 0px 8px rgba(250,250,250, 0.6);
+                opacity: 0.6;
+            }
+            .container form{
+                width: 100%;
+                text-align: center;
+                padding: 25px 20px;
+
+            }
+            form h1{
+                padding: 10px 0;
+            }
+            form .fb{
+                position: relative;
+
+            }
+             
+            form input{
+                width: 100%;
+                height: 50px;
+                border: 1px solid #5c5c5c;
+                border-radius: 3px;
+                background: #181717;
+                padding:  15px;
+                padding-right: 25px;
+                font-size: 20px;
+            }
+            form textarea{
+                padding: 5px 15px;
+                border :1px solid #5c5c5c;
+                border-radius: 3px;
+                background: #181717;
+                font-size: 20px;
+                width: 100%;
+
+
+            }
+            form button{
+                margin-top: 5px;
+                border: none;
+                background: #00fff0;
+                color: #222;
+                padding: 10px ;
+                width: 100%;
+                font-size: 20px;
+                font-weight: 800;
+                cursor: pointer;
+                border-radius: 3px;
+            }
+            form input:focus,form textarea:focus{
+                border: 1px solid #00fff0;
+                color: #00fff0;
+                transition: all 0.3s ease;
+            }
+            form input:focus::placeholder,form textarea:focus::placeholder{
+                padding-left: 4px ;
+                color: #00fff0;
+                transition: all 0.3s ease;
+            }
+            form input:focus +i{
+                color: #00fff0;
+                transition: all 0.3s ease;
+                
+            }
+            
+    
+        </style>
+    </head>
+<body>
+    <section></section>
+    <div class="container" >    
+             <form>
+                 <h1>Give Your Feedback</h1>     
+                <div class="fb">  
+   
+                    <input type="text" placeholder="Full Name" >
+                    
+                </div>
+                <div class="fb">    
+                    <input type="email" placeholder="Email Address">
+                    
+                </div>
+                <textarea cols="15" rows="5" id="subject" name="subject" placeholder="Enter Your Message here..." style="height:150px;width: 410px;"></textarea><br>
+                <button  type="submit"><a href="">Submit</a></button>
+            
+                <!-- write form here -->
+            </form>
+    </div>          <!--enter required code here  -->
+    
+     
+</body>
+</html
